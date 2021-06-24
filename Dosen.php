@@ -1,8 +1,11 @@
 <?php
 
-namespace App;
+namespace App/Models;
 
-class Dosen extends Pegawai{
+use App\Models\TugasAkhir;
+use App\Models\PerguruanTinggi;
+
+class Dosen extends Pengguna implements Pegawai{
     protected $nidn;
     protected $jabatan_akademis;
 
